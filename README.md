@@ -3,16 +3,15 @@ plan.c
 
 #### Notes on learning C, operating systems and assembly
 
-* Learn C the hard way (http://c.learncodethehardway.org/book/)
 
 ### Reading:
-* [Learn C the hard way] (http://c.learncodethehardway.org/book/)
+* [Learn C the hard way](http://c.learncodethehardway.org/book/)
   * Ex1 Extra:
     * What is `int argc` and `char *argv[]` and how are they used? (read links)
       * http://stackoverflow.com/a/21733010
       * http://stackoverflow.com/a/3898070
       * http://stackoverflow.com/a/3024202
-      * http://en.wikipedia.org/wiki/Main_function_%28programming%29#C_and_C.2B.2B
+      * [main()](http://en.wikipedia.org/wiki/Main_function_%28programming%29#C_and_C.2B.2B)
     * GCC goes through 4 steps (preprocessing, compilation, assembly and 
       linking). Inspect the output after each of these steps (see *Overall 
       Options* in the man page for how to do this)
@@ -20,12 +19,12 @@ plan.c
     * Find out why gcc gives exit code 13 and clang exit code 0 when return is 
       omitted from main.
   * Ex2 Extra:
-    * http://linux.die.net/man/1/gcc (just read about -g and -Wall)
-    * http://www.gnu.org/software/make/
-    * http://en.wikipedia.org/wiki/Make\_%28software%29
-    * http://en.wikipedia.org/wiki/Autoconf
-    * http://en.wikipedia.org/wiki/CMake
-    * http://prateekvjoshi.com/2014/02/01/cmake-vs-make/
+    * [man gcc (just read about -g and -Wall)](http://linux.die.net/man/1/gcc)
+    * [Make](http://www.gnu.org/software/make/)
+    * [Make (wiki)](http://en.wikipedia.org/wiki/Make_%28software%29)
+    * [Autoconf](http://en.wikipedia.org/wiki/Autoconf)
+    * [Cmake](http://en.wikipedia.org/wiki/CMake)
+    * [Cmake vs Make](http://prateekvjoshi.com/2014/02/01/cmake-vs-make/)
     * [Makes make file](
       http://git.savannah.gnu.org/cgit/make.git/tree/Makefile.am)
     * [Linux make file](https://github.com/torvalds/linux/blob/master/Makefile)
@@ -43,11 +42,12 @@ plan.c
       https://mail.python.org/pipermail/tutor/2004-January/027693.html)
     * [Why is there a signed char?](
         http://stackoverflow.com/questions/451375/) 
-    * http://stackoverflow.com/questions/2455806/unsigned-long-with-negative-value
+    * [unsigned long with negative value](
+        http://stackoverflow.com/questions/2455806/)
     * [Integer overflow](http://phrack.org/issues/60/10.html#article)
     * [Why is unsigned integer overflow defined but signed overflow undefined?](
        http://stackoverflow.com/questions/18195715/)
-    * http://www.airs.com/blog/archives/120 (signed overflow)
+    * [Signed overflow](http://www.airs.com/blog/archives/120)
   * Ex10 Extra:
     * [For loop comma](http://www.eskimo.com/~scs/cclass/int/sx4db.html)
     * [Null](
@@ -55,7 +55,8 @@ http://stackoverflow.com/questions/1296843/)
   * Ex11 Exta
     * http://www.cprogramming.com/tutorial/c/lesson15.html
     * http://www.cprogramming.com/tutorial/c/lesson9.html
-    * http://www.reddit.com/r/C_Programming/comments/29yrrw/strcpy_implementation/
+    * [strcpy implementation (reddit)](
+    http://www.reddit.com/r/C_Programming/comments/29yrrw/strcpy_implementation/)
   * Ex15: Extra
     * I found [this](http://www.le.ac.uk/users/rjm1/cotter/page_59.htm)
       to be a bit clearer that the text regarding the differences between 
@@ -89,15 +90,15 @@ http://stackoverflow.com/questions/1296843/)
   * Ex17 Extra:
     * ["safe" version of strncpy](
       http://randomascii.wordpress.com/2013/04/03/stop-using-strncpy-already/)
-    * strlcpy: http://stackoverflow.com/a/2115015/2800005
-    * Struct packing: http://www.catb.org/esr/structure-packing/ 
+    * [strlcpy]( http://stackoverflow.com/a/2115015/2800005)
+    * [Struct packing](http://www.catb.org/esr/structure-packing/)
     * [Twos compliment (how most modern processors store integers) - Video](
         https://www.youtube.com/watch?v=SXAr35BiqK8)
    
   * [Undefined behaviour and time travel!](
      http://blogs.msdn.com/b/oldnewthing/archive/2014/06/27/10537746.aspx)
   * [End of File](http://en.wikipedia.org/wiki/End-of-file)
-  * http://man7.org/linux/man-pages/man3/errno.3.html 
+  * [Errno](http://man7.org/linux/man-pages/man3/errno.3.html)
   * [TDD in C](http://eradman.com/posts/tdd-in-c.html) - looks at how to write 
     tests in C without the use of testing frameworks etc...
 * The C Programming Language - K&R
@@ -158,7 +159,7 @@ http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or
 `3[array]` - [Why does this work??](http://stackoverflow.com/questions/5546075/)
 
 ### Errors
-* http://en.wikipedia.org/wiki/Interrupt
+* [Interrupt](http://en.wikipedia.org/wiki/Interrupt)
 * Segmentation Fault (SIGSEGV)
   * [Memory Protection](http://en.wikipedia.org/wiki/Memory_protection)
   * [Segmentation Memory](

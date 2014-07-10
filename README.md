@@ -109,7 +109,6 @@ http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/
 
 valgrind docs: http://valgrind.org/docs/manual/ 
 
-
 ### Arrays
 Finding length of integer arrays doesn’t work so maybe do this - http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array or
 http://stackoverflow.com/a/11204534
@@ -140,3 +139,10 @@ allocating a string as an array:
 char my_string[] = “Hello”;
 ```
 creates an array of chars on the stack (therefore not read only)
+
+### Functions
+Syntax for function declarations 
+* http://stackoverflow.com/questions/1630631/alternate-c-syntax-for-function-declaration-use-cases
+
+
+

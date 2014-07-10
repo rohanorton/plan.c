@@ -141,8 +141,8 @@ char my_string[] = “Hello”;
 creates an array of chars on the stack (therefore not read only)
 
 ### Functions
-Syntax for function declarations 
-* http://stackoverflow.com/questions/1630631/alternate-c-syntax-for-function-declaration-use-cases
+* Syntax for function declarations 
+http://stackexchange.com/so/a/1631781
 
 
 

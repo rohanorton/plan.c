@@ -1,10 +1,8 @@
 plan.c
 ======
 
-Plan of action:
---------------
+#### Notes on learning C, operating systems and assembly
 
-### Reading:
 * Learn C the hard way (http://c.learncodethehardway.org/book/)
   * Ex1 Extra:
     * What is `int argc` and `char *argv[]` and how are they used? (read links)

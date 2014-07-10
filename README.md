@@ -94,7 +94,6 @@ http://stackoverflow.com/questions/1296843/)
     * [Struct packing](http://www.catb.org/esr/structure-packing/)
     * [Twos compliment (how most modern processors store integers) - Video](
         https://www.youtube.com/watch?v=SXAr35BiqK8)
-   
   * [Undefined behaviour and time travel!](
      http://blogs.msdn.com/b/oldnewthing/archive/2014/06/27/10537746.aspx)
   * [End of File](http://en.wikipedia.org/wiki/End-of-file)
@@ -132,31 +131,30 @@ http://stackoverflow.com/questions/1296843/)
 
 
 ### Make
-[Rohan’s annotated makefile for “Learn C The Hard Way”](
+* [Rohan’s annotated makefile for “Learn C The Hard Way”](
 https://gist.github.com/rohanorton/2a888f2295bc3be24d79)
 
 ### Pointers
-[Why `.` and `->` for referencing?](
+* [Why `.` and `->` for referencing?](
 http://stackoverflow.com/questions/13366083/)
 
 ### Integers
-[Cannot have negative integer literals](
+* [Cannot have negative integer literals](
 http://stackoverflow.com/questions/14695118/)
-[What affects how big an integer is? (size in memory)](
+* [What affects how big an integer is? (size in memory)](
 http://stackoverflow.com/questions/2331751/)
 
 ### Debugging
-[Really basic tutorial](
+* [Really basic tutorial](
 http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/)
-for using gdb to debug programs:
-
-[Valgrind docs](http://valgrind.org/docs/manual/)
+for using gdb to debug programs
+* [Valgrind docs](http://valgrind.org/docs/manual/)
 
 ### Arrays
-Finding length of integer arrays doesn’t work so maybe do [this](
+* Finding length of integer arrays doesn’t work so maybe do [this](
 http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or
 [this] (http://stackoverflow.com/a/11204534)
-`3[array]` - [Why does this work??](http://stackoverflow.com/questions/5546075/)
+* `3[array]` - [Why does this work??](http://stackoverflow.com/questions/5546075/)
 
 ### Errors
 * [Interrupt](http://en.wikipedia.org/wiki/Interrupt)
@@ -172,21 +170,21 @@ http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or
   * https://github.com/torvalds/linux/blob/master/arch/x86/mm/fault.c
 
 ### Security
-[On the effectiveness of address space ran](
-http://web.stanford.edu/~blp/papers/asrandom.pdf)
+* [On the effectiveness of address space ran](
+   http://web.stanford.edu/~blp/papers/asrandom.pdf)
 
 ### Strings
-allocating a string as a pointer:
+* allocating a string as a pointer:
 ```c
 char *my_string = "Hello";
 ```
-creates a string literal in read only memory
+  creates a string literal in read only memory
 
-allocating a string as an array:
+* allocating a string as an array:
 ```c
 char my_string[] = "Hello";
 ```
-creates an array of chars on the stack (therefore not read only)
+   creates an array of chars on the stack (therefore not read only)
 
 ### Functions
 * [Syntax for function declarations](

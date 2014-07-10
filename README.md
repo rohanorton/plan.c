@@ -180,3 +180,4 @@ creates an array of chars on the stack (therefore not read only)
 ### Functions
 * Syntax for function declarations 
 http://stackoverflow.com/a/1631781
+* [ANSI vs K&R function syntax](http://stackoverflow.com/a/3092074)

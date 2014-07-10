@@ -151,14 +151,14 @@ http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or
 http://stackoverflow.com/questions/5546075/different-way-of-accessing-array-elements-in-c)
 
 ### Errors
-http://en.wikipedia.org/wiki/Interrupt
-Segmentation Fault (SIGSEGV)
-http://en.wikipedia.org/wiki/Memory_protection
-http://en.wikipedia.org/wiki/Segmentation_%28memory%29
-http://en.wikipedia.org/wiki/Global_Descriptor_Table
-http://en.wikipedia.org/wiki/Local_Descriptor_Table
-http://en.wikipedia.org/wiki/Segmentation_fault
-https://github.com/torvalds/linux/blob/master/arch/x86/mm/fault.c
+* http://en.wikipedia.org/wiki/Interrupt
+* Segmentation Fault (SIGSEGV)
+  * http://en.wikipedia.org/wiki/Memory_protection
+  * http://en.wikipedia.org/wiki/Segmentation_%28memory%29
+  * http://en.wikipedia.org/wiki/Global_Descriptor_Table
+  * http://en.wikipedia.org/wiki/Local_Descriptor_Table
+  * http://en.wikipedia.org/wiki/Segmentation_fault
+  * https://github.com/torvalds/linux/blob/master/arch/x86/mm/fault.c
 
 ### Security
 On the effectiveness of address space ran 

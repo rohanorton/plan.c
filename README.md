@@ -51,7 +51,7 @@ plan.c
   * Ex10 Extra:
     * [For loop comma](http://www.eskimo.com/~scs/cclass/int/sx4db.html)
     * [Null](
-http://stackoverflow.com/questions/1296843/what-is-the-difference-between-null-0-and-0)
+http://stackoverflow.com/questions/1296843/)
   * Ex11 Exta
     * http://www.cprogramming.com/tutorial/c/lesson15.html
     * http://www.cprogramming.com/tutorial/c/lesson9.html
@@ -71,8 +71,9 @@ http://stackoverflow.com/questions/1296843/what-is-the-difference-between-null-0
       whereas, adding one to an int point will add 4 or 8 (`sizeof(int)`) to
       your hex address - this is apparently all worked out by the compiler.
   * Ex16 Extra
-    * http://stackoverflow.com/questions/79923/what-and-where-are-the-stack-and-heap
-    * “When should you use the heap, and when should you use the stack? If you 
+    * [What and where are the stack and the heap?](
+      http://stackoverflow.com/questions/79923/)
+    * "When should you use the heap, and when should you use the stack? If you 
        need to allocate a large block of memory (e.g. a large array, or a big 
        struct), and you need to keep that variable around a long time (like a 
        global), then you should allocate it on the heap. If you are dealing with
@@ -83,40 +84,49 @@ http://stackoverflow.com/questions/1296843/what-is-the-difference-between-null-0
        will likely need to allocate them on the heap, and use dynamic memory 
        allocation functions like malloc(), calloc(), realloc() and free() to 
        manage that memory "by hand". We will talk about dynamically allocated 
-       data structures after we talk about pointers.”:
+       data structures after we talk about pointers.":
        http://www.gribblelab.org/CBootcamp/7_Memory_Stack_vs_Heap.html
   * Ex17 Extra:
-    * “safe” version of strncpy: http://randomascii.wordpress.com/2013/04/03/stop-using-strncpy-already/
+    * ["safe" version of strncpy](
+      http://randomascii.wordpress.com/2013/04/03/stop-using-strncpy-already/)
     * strlcpy: http://stackoverflow.com/a/2115015/2800005
     * Struct packing: http://www.catb.org/esr/structure-packing/ 
-    * https://www.youtube.com/watch?v=SXAr35BiqK8 - twos compliment (how most modern processors store integers)
+    * [Twos compliment (how most modern processors store integers) - Video](
+        https://www.youtube.com/watch?v=SXAr35BiqK8)
    
-  * Undefined behaviour and time travel! http://blogs.msdn.com/b/oldnewthing/archive/2014/06/27/10537746.aspx 
-  * http://en.wikipedia.org/wiki/End-of-file 
+  * [Undefined behaviour and time travel!](
+     http://blogs.msdn.com/b/oldnewthing/archive/2014/06/27/10537746.aspx)
+  * [End of File](http://en.wikipedia.org/wiki/End-of-file)
   * http://man7.org/linux/man-pages/man3/errno.3.html 
-  * TDD in C: http://eradman.com/posts/tdd-in-c.html - looks at how to write tests in C without the use of testing frameworks etc.… looks pretty interesting
+  * [TDD in C](http://eradman.com/posts/tdd-in-c.html) - looks at how to write 
+    tests in C without the use of testing frameworks etc...
 * The C Programming Language - K&R
-		* (http://www.eskimo.com/~scs/cclass/krnotes/top.html - perhaps read these notes along side K&R if any topics do not seem clear)
+    * [K&R notes] (http://www.eskimo.com/~scs/cclass/krnotes/top.html)
+      (perhaps read these notes along side K&R if any topics do not seem clear)
 * 21st Century C
 * OO in C
 * Expert C Programming: Deep C Secrets
 * Implement CONMAN project
 * vim plugin for neo-vim maybe?
  
-* Next steps and Further reading
-* http://duartes.org/gustavo/blog/post/anatomy-of-a-program-in-memory/
-* http://stackoverflow.com/a/2926165 (understand and get the exaple working also read link)
-* https://www.youtube.com/watch?v=2Z0yIguC5eU&list=PL56B156F5D73BBD77 - short video course on operating 
-* http://duartes.org/gustavo/blog/post/kernel-boot-process/
-* http://en.wikipedia.org/wiki/Processor_register
+### Next steps and Further reading
+* [Anatomy of a Program in Memory](
+   http://duartes.org/gustavo/blog/post/anatomy-of-a-program-in-memory/)
+* [Understand and get the example working also read link](
+   http://stackoverflow.com/a/2926165)
+* [Video playlist on operating systems](
+   http://www.youtube.com/playlist?list=PL56B156F5D73BBD77)
+* [Kernel Boot Process](
+   http://duartes.org/gustavo/blog/post/kernel-boot-process)
+* [Processor Register](http://en.wikipedia.org/wiki/Processor_register)
 * http://blogs.msdn.com/b/oldnewthing/archive/2014/06/27/10537746.aspx 
-* http://en.wikipedia.org/wiki/Endianness
+* [Endianness](http://en.wikipedia.org/wiki/Endianness)
 * Make (see Ex2 links and also read Make book)
-* http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf (c 99 standard)
+* [C99 Standard](http://www.open-std.org/jtc1/sc22/WG14/www/docs/n1256.pdf)
 * QEMU - can be used to understand computer architectures and assembly language
 * TAOCP + MIX assembly language
-* DB - https://class.stanford.edu/courses/Engineering/db/2014_1/about
-* C++ for C programmers: https://www.coursera.org/course/cplusplus4c
+* [DB](https://class.stanford.edu/courses/Engineering/db/2014_1/about)
+* [C++ for C programmers](https://www.coursera.org/course/cplusplus4c)
 
 
 
@@ -129,36 +139,40 @@ https://gist.github.com/rohanorton/2a888f2295bc3be24d79)
 http://stackoverflow.com/questions/13366083/)
 
 ### Integers
-http://stackoverflow.com/questions/14695118/2147483648-0-returns-true-in-c/14695202#14695202 - cannot have negative integer literals.
-http://stackoverflow.com/questions/2331751/does-the-size-of-an-int-depend-on-the-compiler-and-or-processor - what affects how big an integer is? (size in memory)
+[Cannot have negative integer literals](
+http://stackoverflow.com/questions/14695118/)
+[What affects how big an integer is? (size in memory)](
+http://stackoverflow.com/questions/2331751/)
 
 ### Debugging
 [Really basic tutorial](
 http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/)
 for using gdb to debug programs:
 
-valgrind docs: http://valgrind.org/docs/manual/ 
+[Valgrind docs](http://valgrind.org/docs/manual/)
 
 ### Arrays
 Finding length of integer arrays doesn’t work so maybe do [this](
 http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or
 [this] (http://stackoverflow.com/a/11204534)
-`3[array]` - [Why does this work?](
-http://stackoverflow.com/questions/5546075/different-way-of-accessing-array-elements-in-c)
+`3[array]` - [Why does this work??](http://stackoverflow.com/questions/5546075/)
 
 ### Errors
 * http://en.wikipedia.org/wiki/Interrupt
 * Segmentation Fault (SIGSEGV)
-  * http://en.wikipedia.org/wiki/Memory_protection
-  * http://en.wikipedia.org/wiki/Segmentation_%28memory%29
-  * http://en.wikipedia.org/wiki/Global_Descriptor_Table
-  * http://en.wikipedia.org/wiki/Local_Descriptor_Table
-  * http://en.wikipedia.org/wiki/Segmentation_fault
+  * [Memory Protection](http://en.wikipedia.org/wiki/Memory_protection)
+  * [Segmentation Memory](
+      http://en.wikipedia.org/wiki/Segmentation_%28memory%29)
+  * [Global Descriptor Table](
+      http://en.wikipedia.org/wiki/Global_Descriptor_Table)
+  * [Local Descriptor Table](
+      http://en.wikipedia.org/wiki/Local_Descriptor_Table)
+  * [Seg Fault](http://en.wikipedia.org/wiki/Segmentation_fault)
   * https://github.com/torvalds/linux/blob/master/arch/x86/mm/fault.c
 
 ### Security
-On the effectiveness of address space ran 
-http://web.stanford.edu/~blp/papers/asrandom.pdf 
+[On the effectiveness of address space ran](
+http://web.stanford.edu/~blp/papers/asrandom.pdf)
 
 ### Strings
 allocating a string as a pointer:
@@ -174,8 +188,8 @@ char my_string[] = "Hello";
 creates an array of chars on the stack (therefore not read only)
 
 ### Functions
-* Syntax for function declarations 
-http://stackoverflow.com/a/1631781
+* [Syntax for function declarations](
+    http://stackoverflow.com/a/1631781)
 * [ANSI vs K&R function syntax](http://stackoverflow.com/a/3092074)
 
 ### Enums

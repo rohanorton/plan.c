@@ -65,12 +65,8 @@ http://stackoverflow.com/questions/1296843/what-is-the-difference-between-null-0
       opposites. The `&` operator takes a piece of data and tells you where it’s
       stored. The `*` operator takes an address and tells you what’s stored 
       there"
-    * Pointer arithmetic:
-```c
-array[2] == *(array + 2) == *(2 + array) == 2[array]
-```
-
-    * this is why it is important for pointers to have types: adding 1 to a char
+    * Pointer arithmetic: `array[2] == *(array + 2) == *(2 + array) == 2[array]`
+    * This is why it is important for pointers to have types: adding 1 to a char
       pointer will just add one (`sizeof(char)`) to the hexadecimal value...
       whereas, adding one to an int point will add 4 or 8 (`sizeof(int)`) to
       your hex address - this is apparently all worked out by the compiler.

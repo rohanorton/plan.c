@@ -142,7 +142,6 @@ for using gdb to debug programs:
 
 valgrind docs: http://valgrind.org/docs/manual/ 
 
-
 ### Arrays
 Finding length of integer arrays doesn’t work so maybe do [this](
 http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or
@@ -175,4 +174,8 @@ allocating a string as an array:
 ```c
 char my_string[] = "Hello";
 ```
-creates an array of chars on the stack (therefore not read only) 
+creates an array of chars on the stack (therefore not read only)
+
+### Functions
+* Syntax for function declarations 
+http://stackoverflow.com/a/1631781

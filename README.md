@@ -11,7 +11,8 @@ plan.c
       * http://stackoverflow.com/a/21733010
       * http://stackoverflow.com/a/3898070
       * http://stackoverflow.com/a/3024202
-      * [main()](http://en.wikipedia.org/wiki/Main_function_%28programming%29#C_and_C.2B.2B)
+      * [main()](
+http://en.wikipedia.org/wiki/Main_function_%28programming%29#C_and_C.2B.2B)
     * GCC goes through 4 steps (preprocessing, compilation, assembly and 
       linking). Inspect the output after each of these steps (see *Overall 
       Options* in the man page for how to do this)
@@ -56,7 +57,7 @@ http://stackoverflow.com/questions/1296843/)
     * http://www.cprogramming.com/tutorial/c/lesson15.html
     * http://www.cprogramming.com/tutorial/c/lesson9.html
     * [strcpy implementation (reddit)](
-    http://www.reddit.com/r/C_Programming/comments/29yrrw/strcpy_implementation/)
+   http://www.reddit.com/r/C_Programming/comments/29yrrw/strcpy_implementation/)
   * Ex15: Extra
     * I found [this](http://www.le.ac.uk/users/rjm1/cotter/page_59.htm)
       to be a bit clearer that the text regarding the differences between 
@@ -75,18 +76,18 @@ http://stackoverflow.com/questions/1296843/)
     * [What and where are the stack and the heap?](
       http://stackoverflow.com/questions/79923/)
     * "When should you use the heap, and when should you use the stack? If you 
-       need to allocate a large block of memory (e.g. a large array, or a big 
-       struct), and you need to keep that variable around a long time (like a 
-       global), then you should allocate it on the heap. If you are dealing with
-       relatively small variables that only need to persist as long as the 
-       function using them is alive, then you should use the stack, it's easier 
-       and faster. If you need variables like arrays and structs that can change
-       size dynamically (e.g. arrays that can grow or shrink as needed) then you
-       will likely need to allocate them on the heap, and use dynamic memory 
-       allocation functions like malloc(), calloc(), realloc() and free() to 
-       manage that memory "by hand". We will talk about dynamically allocated 
-       data structures after we talk about pointers.":
-       http://www.gribblelab.org/CBootcamp/7_Memory_Stack_vs_Heap.html
+      need to allocate a large block of memory (e.g. a large array, or a big 
+      struct), and you need to keep that variable around a long time (like a 
+      global), then you should allocate it on the heap. If you are dealing with
+      relatively small variables that only need to persist as long as the 
+      function using them is alive, then you should use the stack, it's easier 
+      and faster. If you need variables like arrays and structs that can change
+      size dynamically (e.g. arrays that can grow or shrink as needed) then you
+      will likely need to allocate them on the heap, and use dynamic memory 
+      allocation functions like malloc(), calloc(), realloc() and free() to 
+      manage that memory "by hand". We will talk about dynamically allocated 
+      data structures after we talk about pointers.":
+      http://www.gribblelab.org/CBootcamp/7_Memory_Stack_vs_Heap.html
   * Ex17 Extra:
     * ["safe" version of strncpy](
       http://randomascii.wordpress.com/2013/04/03/stop-using-strncpy-already/)
@@ -129,10 +130,11 @@ http://stackoverflow.com/questions/1296843/)
 * [C++ for C programmers](https://www.coursera.org/course/cplusplus4c)
 
 
+## C Language
 
-### Make
-* [Rohan’s annotated makefile for “Learn C The Hard Way”](
-https://gist.github.com/rohanorton/2a888f2295bc3be24d79)
+### Memory
+* [Memory layout of a C Program](
+  http://www.geeksforgeeks.org/memory-layout-of-c-program/)
 
 ### Pointers
 * [Why `.` and `->` for referencing?](
@@ -144,17 +146,11 @@ http://stackoverflow.com/questions/14695118/)
 * [What affects how big an integer is? (size in memory)](
 http://stackoverflow.com/questions/2331751/)
 
-### Debugging
-* [Really basic tutorial](
-http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/)
-for using gdb to debug programs
-* [Valgrind docs](http://valgrind.org/docs/manual/)
-
 ### Arrays
 * Finding length of integer arrays doesn’t work so maybe do [this](
 http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or
 [this] (http://stackoverflow.com/a/11204534)
-* `3[array]` - [Why does this work??](http://stackoverflow.com/questions/5546075/)
+* `3[array]` [Why does this work??](http://stackoverflow.com/questions/5546075/)
 
 ### Errors
 * [Interrupt](http://en.wikipedia.org/wiki/Interrupt)
@@ -196,3 +192,21 @@ char my_string[] = "Hello";
 
 ### Structs
 * [How is memory laid out in structs?](http://stackoverflow.com/a/2749009/)
+
+
+## Tools & Debugging
+
+### Make
+* [Rohan’s annotated makefile for “Learn C The Hard Way”](
+https://gist.github.com/rohanorton/2a888f2295bc3be24d79)
+
+### GDB
+* [Really basic tutorial](
+http://www.thegeekstuff.com/2010/03/debug-c-program-using-gdb/)
+for using gdb to debug programs
+
+### Valgrind
+* [Valgrind docs](http://valgrind.org/docs/manual/)
+
+### Size
+* [Size man](https://sourceware.org/binutils/docs/binutils/size.html)

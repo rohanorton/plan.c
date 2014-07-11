@@ -193,3 +193,6 @@ char my_string[] = "Hello";
 
 ### Enums
 * [enum type](http://en.wikipedia.org/wiki/Enumerated_type#C)
+
+### Structs
+* [How is memory laid out in structs?](http://stackoverflow.com/a/2749009/)

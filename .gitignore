@@ -21,3 +21,9 @@
 *.i*86
 *.x86_64
 *.hex
+
+# debugging files
+core.*
+vcore.*
+
+# binary folders

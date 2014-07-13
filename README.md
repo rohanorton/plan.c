@@ -146,6 +146,22 @@ http://stackoverflow.com/questions/14695118/)
 * [What affects how big an integer is? (size in memory)](
 http://stackoverflow.com/questions/2331751/)
 
+### Casting
+* What happens if you try the following?
+
+```c
+int a = 7;
+int b = 2;
+float c = a / b;
+printf("c = %f\n", c);
+```
+ints divided by ints will always produce int values. In this case 3. So one
+needs to use a cast to convert the numbers on the fly... like this...
+
+```c
+float c = (float)a / (float)b;
+```
+
 ### Arrays
 * Finding length of integer arrays doesn’t work so maybe do [this](
 http://stackoverflow.com/questions/10220124/how-to-know-the-end-of-int-array) or

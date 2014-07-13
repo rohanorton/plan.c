@@ -155,8 +155,8 @@ int b = 2;
 float c = a / b;
 printf("c = %f\n", c);
 ```
-ints divided by ints will always produce int values. In this case 3. So one
-needs to use a cast to convert the numbers on the fly... like this...
+An `int` divided by an `int` will always produce `int` values. In this case 3.
+So one needs to use a cast to convert the numbers on the fly, like this...
 
 ```c
 float c = (float)a / (float)b;

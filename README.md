@@ -193,6 +193,10 @@ char my_string[] = "Hello";
 ### Structs
 * [How is memory laid out in structs?](http://stackoverflow.com/a/2749009/)
 
+### Command Line Options parsing
+* [Getopt wikipedia](http://en.wikipedia.org/wiki/Getopt)
+* [Example usage of getopt](
+  http://linuxprograms.wordpress.com/2012/06/22/c-getopt-example/)
 
 ## Tools & Debugging
 

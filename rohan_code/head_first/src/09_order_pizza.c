@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
     int count = 0;
     char ch;
     
-    while((ch = getopt(argc, argv, "d:t")) != EOF) 
+    while((ch = getopt(argc, argv, "d:t")) != EOF) {
         switch (ch) {
             case 'd':
                 delivery = optarg;
@@ -19,6 +19,7 @@ int main(int argc, char *argv[])
                 fprintf(stderr, "Unknown option: '%s'\n", optarg);
                 return 1;
         }
+    }
     argc -= optind;
     argv += optind;
 

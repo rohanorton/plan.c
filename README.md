@@ -202,6 +202,10 @@ char my_string[] = "Hello";
 * [Syntax for function declarations](
     http://stackoverflow.com/a/1631781)
 * [ANSI vs K&R function syntax](http://stackoverflow.com/a/3092074)
+* Use function declarations to show the compiler what the function will look
+  like before you define them. If compiler finds a call to a function that 
+  hasn't been declared yet, it presumes that the function returns an `int`.
+* Include function declarations in a header file.
 
 ### Enums
 * [enum type](http://en.wikipedia.org/wiki/Enumerated_type#C)

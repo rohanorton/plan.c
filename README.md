@@ -218,6 +218,42 @@ char my_string[] = "Hello";
 * [Example usage of getopt](
   http://linuxprograms.wordpress.com/2012/06/22/c-getopt-example/)
 
+### Reserved Words:
+```c
+auto
+int
+char
+return
+do
+static
+entry
+typedef
+for
+while
+const
+if
+case
+register
+default
+sizeof
+else
+switch
+float
+unsigned
+enum
+signed
+break
+long
+continue
+short
+double
+struct
+extern
+union
+goto
+void
+volatile
+```
 ## Tools & Debugging
 
 ### Make
@@ -234,3 +270,4 @@ for using gdb to debug programs
 
 ### Size
 * [Size man](https://sourceware.org/binutils/docs/binutils/size.html)
+

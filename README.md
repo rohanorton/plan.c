@@ -230,6 +230,14 @@ my_func(&this_struct);
   same block of memory for both structs!
 * [Using typedef to alias structs](http://stackoverflow.com/a/1675446/2800005)
 
+### Unions
+* A union is a value that may have a number of different possible types (i.e. it
+  could be an `int`, `float`, `char`)
+* A union is defined in similar manner to a struct. But instead of allocating
+  memory to each field as occurs for a struct, a union only allocates enough
+  memory to statisfy it's largest field. This is because only one piece of data
+  will ever be stored.
+
 ### Command Line Options parsing
 * [Getopt wikipedia](http://en.wikipedia.org/wiki/Getopt)
 * [Example usage of getopt](

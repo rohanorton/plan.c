@@ -248,7 +248,8 @@ typedef struct {
 
 ### Unions
 * A union is a value that may have a number of different possible types (i.e. it
-  could be an `int`, `float`, `char`)
+  could be an `int`, `float`, `char`). That is, it can hold different data types
+  in one location.
 * A union is defined in similar manner to a struct. But instead of allocating
   memory to each field as occurs for a struct, a union only allocates enough
   memory to statisfy it's largest field. This is because only one piece of data

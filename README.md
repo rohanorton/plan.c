@@ -230,6 +230,22 @@ my_func(&this_struct);
   same block of memory for both structs!
 * [Using typedef to alias structs](http://stackoverflow.com/a/1675446/2800005)
 
+### Bitfields
+* It is possible to specify the number of bits that an item in a struct takes up
+  using bitfields. This can be useful for reducing the size of structs.
+
+```c
+typedef struct {
+  unsigned int boolean_answer:1; // will only store one bit of info (0-1)
+  unsigned int day_of_week:3;    // will store integers 0-7
+  unsigned int month:4;          // will store integers 0-15
+} my_struct;
+```
+
+* Bitfields are only really useful when used in a group of items such as a
+  struct, as the compiler will often pad out instances of bitfields used in
+  isolation.
+
 ### Unions
 * A union is a value that may have a number of different possible types (i.e. it
   could be an `int`, `float`, `char`)

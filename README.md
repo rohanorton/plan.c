@@ -215,6 +215,7 @@ char my_string[] = "Hello";
 * copy the contents of a struct to another struct creates a new struct in
   memory... but remember that if a string is a pointer, it will point to the
   same block of memory for both structs!
+* [Using typedef to alias structs](http://stackoverflow.com/a/1675446/2800005)
 
 ### Command Line Options parsing
 * [Getopt wikipedia](http://en.wikipedia.org/wiki/Getopt)

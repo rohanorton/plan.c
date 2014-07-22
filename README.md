@@ -111,6 +111,7 @@ http://stackoverflow.com/questions/1296843/)
 * vim plugin for neo-vim maybe?
  
 ### Next steps and Further reading
+* [History of C](http://cm.bell-labs.com/cm/cs/who/dmr/chist.html)
 * [Anatomy of a Program in Memory](
    http://duartes.org/gustavo/blog/post/anatomy-of-a-program-in-memory/)
 * [Understand and get the example working also read link](
@@ -274,3 +275,5 @@ for using gdb to debug programs
 ### Size
 * [Size man](https://sourceware.org/binutils/docs/binutils/size.html)
 
+### Async file io in C
+http://fwheel.net/aio.html

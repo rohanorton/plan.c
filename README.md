@@ -206,6 +206,19 @@ char my_string[] = "Hello";
   like before you define them. If compiler finds a call to a function that 
   hasn't been declared yet, it presumes that the function returns an `int`.
 * Include function declarations in a header file.
+* Parameters: In C, parameters are passed to functions by value. So when calling
+  a function, the values passed to it are assigned to the parameters. So... pass
+  pointers, not structs, if you want changes to persist!
+
+```c
+void my_func(struct *my_struct)
+{
+  ...
+}
+...
+struct my_struct this_struct = {foo, bar};
+my_func(&this_struct);
+```
 
 ### Enums
 * [enum type](http://en.wikipedia.org/wiki/Enumerated_type#C)

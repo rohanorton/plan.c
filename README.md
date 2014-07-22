@@ -207,12 +207,54 @@ char my_string[] = "Hello";
   like before you define them. If compiler finds a call to a function that 
   hasn't been declared yet, it presumes that the function returns an `int`.
 * Include function declarations in a header file.
+* Parameters: In C, parameters are passed to functions by value. So when calling
+  a function, the values passed to it are assigned to the parameters. So... pass
+  pointers, not structs, if you want changes to persist!
+
+```c
+void my_func(struct *my_struct)
+{
+  ...
+}
+...
+struct my_struct this_struct = {foo, bar};
+my_func(&this_struct);
+```
 
 ### Enums
 * [enum type](http://en.wikipedia.org/wiki/Enumerated_type#C)
 
 ### Structs
 * [How is memory laid out in structs?](http://stackoverflow.com/a/2749009/)
+* copy the contents of a struct to another struct creates a new struct in
+  memory... but remember that if a string is a pointer, it will point to the
+  same block of memory for both structs!
+* [Using typedef to alias structs](http://stackoverflow.com/a/1675446/2800005)
+
+### Bitfields
+* It is possible to specify the number of bits that an item in a struct takes up
+  using bitfields. This can be useful for reducing the size of structs.
+
+```c
+typedef struct {
+  unsigned int boolean_answer:1; // will only store one bit of info (0-1)
+  unsigned int day_of_week:3;    // will store integers 0-7
+  unsigned int month:4;          // will store integers 0-15
+} my_struct;
+```
+
+* Bitfields are only really useful when used in a group of items such as a
+  struct, as the compiler will often pad out instances of bitfields used in
+  isolation.
+
+### Unions
+* A union is a value that may have a number of different possible types (i.e. it
+  could be an `int`, `float`, `char`). That is, it can hold different data types
+  in one location.
+* A union is defined in similar manner to a struct. But instead of allocating
+  memory to each field as occurs for a struct, a union only allocates enough
+  memory to statisfy it's largest field. This is because only one piece of data
+  will ever be stored.
 
 ### Command Line Options parsing
 * [Getopt wikipedia](http://en.wikipedia.org/wiki/Getopt)

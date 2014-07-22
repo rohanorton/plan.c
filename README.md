@@ -212,6 +212,9 @@ char my_string[] = "Hello";
 
 ### Structs
 * [How is memory laid out in structs?](http://stackoverflow.com/a/2749009/)
+* copy the contents of a struct to another struct creates a new struct in
+  memory... but remember that if a string is a pointer, it will point to the
+  same block of memory for both structs!
 
 ### Command Line Options parsing
 * [Getopt wikipedia](http://en.wikipedia.org/wiki/Getopt)

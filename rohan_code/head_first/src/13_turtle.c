@@ -12,9 +12,16 @@ typedef struct {
 // i.e. it copies struct
 void happy_birthday(turtle *t)
 {
-    (*t).age = (*t).age + 1;
+    // DO NOT attempt to access using 
+    //  *t.age 
+    // This is equivalent to saying *(t.age) which doesn't make sense!
+    //
+    // Original form is:
+    //  (*t).age = (*t).age + 1;
+    // but some find this confusing, so developed this syntax:
+    t->age = t->age + 1;
     printf("Happy Birthday %s! You are now %i years old!\n",
-            (*t).name, (*t).age);
+            t->name, t->age);
 }
 
 int main(int argc, const char *argv[])

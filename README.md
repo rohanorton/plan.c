@@ -129,6 +129,7 @@ http://stackoverflow.com/questions/1296843/)
 * TAOCP + MIX assembly language
 * [DB](https://class.stanford.edu/courses/Engineering/db/2014_1/about)
 * [C++ for C programmers](https://www.coursera.org/course/cplusplus4c)
+* [Functional programming in C?](http://blog.charlescary.com/?p=95)
 
 
 ## C Language

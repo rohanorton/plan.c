@@ -14,14 +14,18 @@ SRC_FILES = $(wildcard $(SRC)*.c)
 PROG_FILES = $(patsubst %.c,%,$(patsubst $(SRC)%,$(BIN)%,$(SRC_FILES)))
 
 .PHONY: all
-all: $(PROG_FILES) $(BIN)12_message_hider $(BIN)22_bank_vault 
+all: $(PROG_FILES) $(BIN)12_message_hider $(BIN)22_bank_vault $(BIN)23_elliptical
 
 $(BIN)12_message_hider: $(MSG_HIDER_DIR)*
 	$(CC) $(CFLAGS) $(LDFLAGS) $(MSG_HIDER_DIR)message_hider.c $(MSG_HIDER_DIR)encrypt.c  -o $@
 
 $(BIN)22_bank_vault:
 	# running make from another directory
-	$(MAKE) -C $(SRC_FILES)22_bank_vault
+	$(MAKE) -C $(SRC)22_bank_vault
+
+$(BIN)23_elliptical:
+	# running make from another directory
+	$(MAKE) -C $(SRC)23_elliptical
 
 $(BIN)%: $(SRC)%.c
 	$(CC) $(CFLAGS) $(LDFLAGS) $< -o $@

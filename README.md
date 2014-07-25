@@ -221,6 +221,34 @@ void my_func(struct *my_struct)
 struct my_struct this_struct = {foo, bar};
 my_func(&this_struct);
 ```
+* variadic functions
+
+```c
+// require stdarg header for variadic functions
+#include<stdarg.h>
+
+// the following function will take any number of integers and print them
+// requires an initial count!
+
+void print_nums(int args, ...)
+{
+    va_list ap;
+    va_start(ap, args);
+    int i;
+    for (i = 0; i < args; i++) {
+        printf("argument: %i\n", va_arg(ap, int));
+    }
+    va_end(ap);
+}
+
+// example usage:
+//    print_nums(3, 2, 1 ,3);
+// prints:
+//    argument: 2
+//    argument: 1
+//    argument: 3
+
+```
 
 ### Enums
 * [enum type](http://en.wikipedia.org/wiki/Enumerated_type#C)
